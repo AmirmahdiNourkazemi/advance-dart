@@ -5,5 +5,5 @@ void main(List<String> arguments) async {
   //  print(input());
   // Set<int> set = {1, 2, 3, 4, 5};
   ListClass list = ListClass();
-  list.learnMap();
+  list.learnListFillRange();
 }
