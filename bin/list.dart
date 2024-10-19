@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class ListClass {
   void learnListReplaceRange() {
     List<int> list = [1, 2, 3, 4, 5];
@@ -128,5 +130,24 @@ class ListClass {
     final number = <int>[4, 2, 6, 5];
     final result = number.takeWhile((element) => element.isEven);
     print(result); //(4, 6)
+  }
+
+
+  void learnListFirstwhere(){
+    List<int> list = [19 , 20 , 18];
+    var res = list.firstWhere((element) => element % 3 == 0 , orElse: () => -1);
+     print(res); // 18
+  }
+
+
+  void learnListFollwedBy(){
+    var list = ["salam" , 1 , "2"];
+    var update = list.followedBy(['man',2]);
+    print(update); // (salam, 1, 2, man, 2)
+  }
+
+  void learnListSublist(){
+    List<dynamic> list = ["1",2 , 4 , 6 , 7];
+     print(list.sublist(1 , 4));//[2, 4, 6]
   }
 }
